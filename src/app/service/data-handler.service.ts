@@ -21,5 +21,10 @@ export class DataHandlerService {
   getPriorities(): Priority[] {
     return TestData.priorities;
   }
+  getTasksByCategory(category: Category): Task[]{
+    const tasks = TestData.tasks.filter(task => task.category === category );
+    console.log(tasks);
+    return tasks;
+  }
 
 }
