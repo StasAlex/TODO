@@ -12,7 +12,7 @@ export class CategoriesComponent implements OnInit {
   constructor(private dataHandler: DataHandlerService) { }
 
   ngOnInit() {
-    this.categories = this.dataHandler.getCategories()
+    this.categories = this.dataHandler.getCategories();
   }
 
 }
